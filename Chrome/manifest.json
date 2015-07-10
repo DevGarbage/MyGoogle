@@ -1,0 +1,18 @@
+{
+  "name": "Google Logo To Name",
+  "version": "1",
+  "description": "This extension can be used for update the google logo with custom text",
+ "manifest_version": 2,
+ "permissions": ["tabs"],
+  "permissions": ["tabs", "<all_urls>"],
+   "content_scripts": [ {
+    "matches": ["http://*/*", "https://*/*", "ftp://*/*", "file://*/*"],
+    "js": [
+	"JS/jquery-2.1.4.min.js",
+	"JS/Content_Script.js"
+	],
+	"css": ["CSS/Content_Style.css"],
+    "run_at": "document_start"
+  }
+  ]
+}

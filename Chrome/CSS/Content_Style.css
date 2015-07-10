@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "catull-regular";
+    src: url(../Fonts/catull-r-regular.ttf) format('truetype');
+}
+#hplogo {
+    font-family:catull-regular;
+    font-size:100px;
+}
